@@ -1,0 +1,28 @@
+[2024-04-23 12:31:00]P0044180 : Exception on update values:A USB control transfer stalled
+ Help : 
+ Source of Error : Thorlabs.TLPMX_32.Interop
+   at Thorlabs.TLPMX_32.Interop.TLPMX.PInvokeTLPM.ThrowError(HandleRef handle, Int32 code)
+   at Thorlabs.TLPMX_32.Interop.TLPMX.readRaw(StringBuilder Buffer, UInt32 Size, UInt32& Return_Count)
+   at Powermeter.Sensor.getLastSeenMeasurementValue() in D:\work\4251a9287962a00d\app\099244_WPF_PM_GUI\src\Powermeter\Sensor.cs:line 1421
+   at Powermeter.Photodiode.UpdateMeasurementValues() in D:\work\4251a9287962a00d\app\099244_WPF_PM_GUI\src\Powermeter\Photodiode.cs:line 449
+   at Powermeter.PhotodiodeWithInputFilterState.UpdateMeasurementValues() in D:\work\4251a9287962a00d\app\099244_WPF_PM_GUI\src\Powermeter\PhotodiodeWithInputFilterState.cs:line 98
+   at Powermeter.PMDevice.UpdateMeasurements() in D:\work\4251a9287962a00d\app\099244_WPF_PM_GUI\src\Powermeter\PMDevice.cs:line 1449
+   at Powermeter.PMDevice.UpdateWorkerThread() in D:\work\4251a9287962a00d\app\099244_WPF_PM_GUI\src\Powermeter\PMDevice.cs:line 1498
+
+[2024-04-23 12:31:00]Device use TLPMX driver True
+
+[2024-04-23 12:31:00]TLPMX driver support NI Visa True
+
+[2024-04-23 12:31:00]USB was plugged out. Device serial number : USB0::0x1313::0x8078::P0044180::INSTR
+
+[2024-04-23 12:31:00]Device USB0::0x1313::0x8078::P0044180::INSTR is disconnected.
+
+[2024-04-23 12:31:02]Device closed: P0044180
+
+[2024-04-23 12:31:02]System.IO.IOException: The process cannot access the file 'cap_2024-04-23_12-12-39' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at Thorlabs.PMGUI.SharedResources.StatisticsScopeDataLoader.ClearTempFolder() in D:\work\4251a9287962a00d\app\099244_WPF_PM_GUI\src\Thorlabs.PMGUI.SharedResources\StatisticsScopeDataLoader.cs:line 952
+
+[2024-04-23 12:31:03]Application exit.
+

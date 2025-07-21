@@ -1,0 +1,35 @@
+﻿Optical Power Monitor 5.1.4771.793
+
+Power Meter,PM100D
+Power Meter SN,P0044180
+Sensor,S120C
+Sensor SN,240219523
+Sensor Type,Photodiode
+Wavelength,420 nm
+Range,Auto,range changed during the measurement.
+
+Start of Measurement,4/23/2024 12:08:33
+Elapsed Time,00:00:09:998
+Samples,2648
+
+Power
+Min.(W),Max.(W),Percentage(%),Count
+
+1.4414E-07,1.7642E-07,2.8,73
+1.7642E-07,2.0869E-07,2.0,54
+2.0869E-07,2.4097E-07,2.0,53
+2.4097E-07,2.7324E-07,1.9,51
+2.7324E-07,3.0552E-07,1.7,44
+3.0552E-07,3.378E-07,1.9,49
+3.378E-07,3.7007E-07,1.9,49
+3.7007E-07,4.0235E-07,8.3,221
+4.0235E-07,4.3462E-07,14.2,375
+4.3462E-07,4.669E-07,63.4,1678
+
+--Statistics--
+Minimum [W],1.4414E-07
+Maximum [W],4.669E-07
+Mean [W],4.1279E-07
+Standard Deviation [W],7.3149E-08
+Ratio,3.239 : 1
+
